@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int x,y,n,a,z,s;
     printf("Enter the limit: ");
@@ -17,4 +17,5 @@ void main()
         }
         printf("\n");
     }
+    return 0;
 }
