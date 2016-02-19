@@ -23,10 +23,6 @@ int main()
         num[i]=n%10;
         n/=10;
     }
-    for(i=0;i<count;i++)
-    {
-        printf("%d",num[i]);
-    }
     nextpalindrome(num,count);
     return 0;
 }
