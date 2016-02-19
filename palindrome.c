@@ -8,9 +8,26 @@ void nextpalindrome1(int num[],int n);
 int main()
 {   
     
-    int num[]={9, 4, 1, 8, 7, 9, 7, 8, 3, 2, 2};
-    int n=sizeof(num)/4;
-    nextpalindrome(num,n);
+    long int temp,n;
+    int count=0,i;
+    int num[20];
+    scanf("%ld",&n);
+    temp=n;
+    while(temp>0)
+    {
+        ++count;
+        temp/=10;
+    }
+    for(i=count-1;i>=0;i--)
+    {
+        num[i]=n%10;
+        n/=10;
+    }
+    for(i=0;i<count;i++)
+    {
+        printf("%d",num[i]);
+    }
+    nextpalindrome(num,count);
     return 0;
 }
 
